@@ -3,16 +3,16 @@
 int a[10][10], visited[10], n, cost = 0;
 void get() {
     int i, j;
-    printf("Enter No. of Cities: ");
+    printf("Enter No. of Cities : ");
     scanf("%d", &n);
-    printf("\nEnter Cost Matrix: \n");
+    printf("\nEnter Cost Matrix : \n");
     for (i = 0; i < n; i++) {
         printf("\n Enter Elements of Row# : %d\n", i + 1);
         for (j = 0; j < n; j++)
             scanf("%d", &a[i][j]);
         visited[i] = 0;
     }
-    printf("\n\nThe cost list is:\n\n");
+    printf("\n\nThe cost list is :\n\n");
     for (i = 0; i < n; i++) {
         printf("\n\n");
         for (j = 0; j < n; j++)
@@ -48,11 +48,11 @@ void mincost(int city) {
     }
     mincost(ncity);
 }
-
 void put() {
     printf("\n\nMinimum cost:");
     printf("%d", cost);
 }
+
 void main() {
     get();
     printf("\n\nThe Path is:\n\n");
